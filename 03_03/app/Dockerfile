@@ -2,7 +2,7 @@ FROM node:latest
 
 ENV NODE_ENV=production
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/index
 
 COPY package*.json ./
 
@@ -12,7 +12,7 @@ COPY . .
 
 EXPOSE 3000
 
-RUN chown -R node /usr/src/app
+RUN chown -R node /usr/src/index
 
 USER node
 

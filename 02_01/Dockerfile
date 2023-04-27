@@ -1,5 +1,5 @@
 FROM node:12
-WORKDIR /app
+WORKDIR /index
 COPY . .
 EXPOSE 8080
 CMD ["node", "server.js"]
